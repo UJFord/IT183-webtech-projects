@@ -46,3 +46,19 @@ body {
 .green {
 	background: #7cb9ab;
 }
+
+/* List */
+#list-showcase{
+	background: #445069;
+}
+.list-group-item{
+	background-color: #dbdbdb;
+	color: #524f4f;
+	border-color: rgb(133, 130, 130);
+}
+
+
+/* Paragraph */
+#par-showcase{
+	background: #445069;
+}
