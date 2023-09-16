@@ -75,10 +75,12 @@ function buttonClicked(id) {
 		case 'ac':
 			computation = '';
 			buffer = '';
+			display.textContent = buffer;
 			break;
 
 		case 'c':
 			buffer = buffer.substring(0, buffer.length - 1);
+			display.textContent = buffer;
 			break;
 
 		case '+':
@@ -87,6 +89,7 @@ function buttonClicked(id) {
 		case '/':
 			computation += (buffer+id);
 			buffer = '';
+			display.textContent = eval(computation.substring(0, computation.length - 1));
 			break;
 
 		case '=':
@@ -95,14 +98,16 @@ function buttonClicked(id) {
 			display.textContent = eval(computation);
 			buffer = eval(computation);
 			computation = '';
+			display.textContent = buffer;
 			break;
 
 		default:
 			buffer+= id;
+			display.textContent = buffer;
 
 	}
+	
 	console.log(buffer + '|||||||' + computation);
-	display.textContent = buffer;
 }
 
 
