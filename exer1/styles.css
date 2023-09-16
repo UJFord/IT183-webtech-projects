@@ -1,5 +1,10 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@font-face {
+	font-family: 'Digital-7';
+	src: url('digital-7/digital-7\ \(mono\).ttf') format('truetype');
+}
 
 * {
 	margin: 0;
@@ -21,18 +26,18 @@ body {
 #head1 {
 }
 /* head text */
-.head-text{
-    font-family: 'Montserrat', sans-serif;
+.head-text {
+	font-family: 'Montserrat', sans-serif;
 }
 
 /* Coloring */
 .color {
 	width: 15px;
 	height: 15px;
-    margin: 0 5px;
+	margin: 0 5px;
 }
 .coloring-container {
-    width: 100px;
+	width: 100px;
 }
 .white {
 	background: #dbdbdb;
@@ -48,35 +53,37 @@ body {
 }
 
 /* List */
-#list-showcase{
+#list-showcase {
 	background: #445069;
 }
-.list-group-item{
+.list-group-item {
 	background-color: #dbdbdb;
 	color: #524f4f;
 	border-color: rgb(133, 130, 130);
 }
 
-
 /* Paragraph */
-#par-showcase{
+#par-showcase {
 	background: #445069;
 }
 
-
 /* Calculator */
-#calc-container{
+#calc-container {
 	/* width: 500px; */
 }
 
-#display{
+#display {
 	height: 50px;
 	background: #dbdbdb;
-	color: #524f4f;
+	color: #000000;
+	font-family: 'Digital-7';
+	font-size: 20px;
 }
 
-.btn{
+.btn {
 	color: #adadad;
 	width: 40px;
 	height: 40px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
 }

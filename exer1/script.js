@@ -1,3 +1,4 @@
+// Header Coloring
 //Choose color for header based on class name
 function choosecolor(className) {
     switch (className) {
@@ -15,11 +16,12 @@ function choosecolor(className) {
     }
 }
 
-
-// Header Coloring
-// head 1
 let head1Color = document.querySelectorAll('#head1 .color');
+let head2Color = document.querySelectorAll('#head2 .color');
+let head3Color = document.querySelectorAll('#head3 .color');
 const head1Text = document.querySelector('#head1 .head-text');
+const head2Text = document.querySelector('#head2 .head-text');
+const head3Text = document.querySelector('#head3 .head-text');
 
 head1Color.forEach((colorElement) => {
 	colorElement.addEventListener('click', function () {
@@ -31,10 +33,6 @@ head1Color.forEach((colorElement) => {
 	});
 });
 
-// head 2
-let head2Color = document.querySelectorAll('#head2 .color');
-const head2Text = document.querySelector('#head2 .head-text');
-
 head2Color.forEach((colorElement) => {
 	colorElement.addEventListener('click', function () {
 		// Get the color class from the clicked element
@@ -42,14 +40,17 @@ head2Color.forEach((colorElement) => {
 	});
 });
 
-// head 3
-let head3Color = document.querySelectorAll('#head3 .color');
-const head3Text = document.querySelector('#head3 .head-text');
-
 head3Color.forEach((colorElement) => {
 	colorElement.addEventListener('click', function () {
 		// Get the color class from the clicked element
 		const colorClass =  choosecolor(this.classList[1]);
 		head3Text.style.color = colorClass;
 	});
-});
+});\
+
+
+/* Calculator */
+// display
+let display = querySelector('#displaytext').innerHTML;
+console
+

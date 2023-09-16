@@ -13,7 +13,9 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
+		<!-- icons -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+		<script src="https://kit.fontawesome.com/57e83eb6e4.js" crossorigin="anonymous"></script>
 		<!-- custom -->
 		<link rel="stylesheet" href="styles.css" />
 
@@ -117,36 +119,42 @@
 					<div class="row d-flex justify-content-center ">
 						<div id="display" class="col-10 row mb-2 rounded d-flex justify-content-center">
 							<!-- text --> 
-							<div id="display-text" class="border-bottom border-2 border-dark my-2 text-end"></div>
+							<div id="display-text" class="border-bottom border-2 border-dark my-2 text-end">43123123133424</div>
 						</div>
 					</div>
 					<!-- numbers -->
 					<div class="container">
 						<div class="row mb-2">
-							<div class="col-3"><button class="btn border text-center">(</button></div>
-							<div class="col-3"><button class="btn border text-center">)</button></div>
-							<div class="col-3"><button class="btn border text-center">AC</button></div>
-							<div class="col-3"><button class="btn border text-center"><i class="bi bi-backspace"></i></button></div>
+							<div class="col-3"><button id="open" class="btn border text-center">(</button></div>
+							<div class="col-3"><button id="close" class="btn border text-center">)</button></div>
+							<div class="col-3"><button id="ac" class="btn border text-center p-0">AC</button></div>
+							<div class="col-3"><button id="c" class="btn border text-center"><i class="fa-solid fa-delete-left"></i></button></div>
 						</div>
 						<div class="row mb-2">
-							<div class="col-3"><button class="btn border text-center">7</button></div>
-							<div class="col-3"><button class="btn border text-center">8</button></div>
-							<div class="col-3"><button class="btn border text-center">9</button></div>
-							<div class="col-3"><button class="btn border text-center">/</i></button></div>
+							<div class="col-3"><button id="7" class="btn border text-center"><i class="fa-solid fa-7"></i></button></div>
+							<div class="col-3"><button id="8" class="btn border text-center"><i class="fa-solid fa-8"></i></button></div>
+							<div class="col-3"><button id="9" class="btn border text-center"><i class="fa-solid fa-9"></i></button></div>
+							<div class="col-3"><button id="divide" class="btn border text-center"><i class="fa-solid fa-divide"></i></button></div>
 						</div>
 						<div class="row mb-2">
-							<div class="col-3"><button class="btn border text-center">7</button></div>
-							<div class="col-3"><button class="btn border text-center">8</button></div>
-							<div class="col-3"><button class="btn border text-center">9</button></div>
-							<div class="col-3"><button class="btn border text-center">/</i></button></div>
+							<div class="col-3"><button id="4" class="btn border text-center"><i class="fa-solid fa-4"></i></button></div>
+							<div class="col-3"><button id="5" class="btn border text-center"><i class="fa-solid fa-5"></i></button></div>
+							<div class="col-3"><button id="6" class="btn border text-center"><i class="fa-solid fa-6"></i></button></div>
+							<div class="col-3"><button id="times" class="btn border text-center"><i class="fa-solid fa-xmark"></i></button></div>
+						</div>
+						<div class="row mb-2">
+							<div class="col-3"><button id="1" class="btn border text-center"><i class="fa-solid fa-1"></i></button></div>
+							<div class="col-3"><button id="2" class="btn border text-center"><i class="fa-solid fa-2"></i></button></div>
+							<div class="col-3"><button id="3" class="btn border text-center"><i class="fa-solid fa-3"></i></button></div>
+							<div class="col-3"><button id="minus" class="btn border text-center"><i class="fa-solid fa-minus"></i></button></div>
 						</div>
 						<div class="row">
-							<div class="col-3"><button class="btn border text-center">4</button></div>
-							<div class="col-3"><button class="btn border text-center">5</button></div>
-							<div class="col-3"><button class="btn border text-center">6</button></div>
-							<div class="col-3"><button class="btn border text-center">x<button></div>
-							</div>
+							<div class="col-3"><button id="0" class="btn border text-center"><i class="fa-solid fa-0"></i></button></div>
+							<div class="col-3"><button id="dec" class="btn border text-center">.</button></div>
+							<div class="col-3"><button id="equal" class="btn border text-center"><i class="fa-solid fa-equals"></i></button></div>
+							<div class="col-3"><button id="plus" class="btn border text-center"><i class="fa-solid fa-plus"></i></button></div>
 						</div>
+					</div>
 				</div>
 			</div>
 			
