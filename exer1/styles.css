@@ -69,7 +69,6 @@ body {
 
 /* Calculator */
 #calc-container {
-	/* width: 500px; */
 }
 
 #display {
@@ -80,10 +79,24 @@ body {
 	font-size: 20px;
 }
 
+#display-text {
+	pointer-events: none;
+	overflow-x: hidden;
+	background: transparent;
+}
+
+
 .btn {
 	color: #adadad;
 	width: 40px;
 	height: 40px;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 600;
+}
+
+i{
+	z-index: -1;
+}
+button{
+	z-index: 1;
 }

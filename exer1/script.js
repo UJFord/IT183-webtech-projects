@@ -46,11 +46,63 @@ head3Color.forEach((colorElement) => {
 		const colorClass =  choosecolor(this.classList[1]);
 		head3Text.style.color = colorClass;
 	});
-});\
+});
 
 
 /* Calculator */
 // display
-let display = querySelector('#displaytext').innerHTML;
-console
+let display = document.querySelector('#display-text');
+// Get the container element
+const calcInputContainer = document.querySelector('#calc-input');
+let computation = '';
+let buffer = '';
+
+// Add a click event listener to the container
+calcInputContainer.addEventListener('click', function (event) {
+    // Check if the clicked element is a button or an icon inside a button
+    if (event.target.tagName === 'BUTTON' || event.target.closest('button')) {
+        // Get the button element that was clicked (either the button itself or its closest parent button)
+        const button = event.target.tagName === 'BUTTON' ? event.target : event.target.closest('button');
+        
+        // Get the data-id attribute value (the id of the clicked button)
+        buttonClicked(button.id);
+    }
+});
+
+// Function to handle button click events
+function buttonClicked(id) {
+    switch (id) {
+		case 'ac':
+			computation = '';
+			buffer = '';
+			break;
+
+		case 'c':
+			buffer = buffer.substring(0, buffer.length - 1);
+			break;
+
+		case '+':
+		case '-':
+		case '*':
+		case '/':
+			computation += (buffer+id);
+			buffer = '';
+			break;
+
+		case '=':
+			computation += buffer;
+			buffer = '';
+			display.textContent = eval(computation);
+			buffer = eval(computation);
+			computation = '';
+			break;
+
+		default:
+			buffer+= id;
+
+	}
+	console.log(buffer + '|||||||' + computation);
+	display.textContent = buffer;
+}
+
 
