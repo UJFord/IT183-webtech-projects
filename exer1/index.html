@@ -13,6 +13,7 @@
 			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
 			crossorigin="anonymous"
 		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
 		<!-- custom -->
 		<link rel="stylesheet" href="styles.css" />
 
@@ -83,7 +84,7 @@
 				</div>
 			</div>
 
-			<div class="row column-gap-3">
+			<div class="row column-gap-3 mb-5">
 				<div id="list-showcase" class="col-4 container rounded px-4 py-3">
 					<h5 class="head-text">
 						The main essence of this tutorial is to:
@@ -101,36 +102,54 @@
 						</li>
 					</ul>
 				</div>
-				<div id="par-showcase" class="col container rounded text-center fs-4 d-flex align-items-center">
+				<div id="par-showcase" class="col container rounded fs-4 p-4">
+					<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80" class="rounded float-end me-4 mb-2" width="200px" alt="...">
 					<p>
-						In HTML, <em>paragraph</em> tags, represented as <strong>&lt;p&gt;</strong>, are used to define and structure text content within a web page. They create a <em>block-level</em> element, automatically adding spacing before and after the enclosed text, making it suitable for organizing and presenting textual information in a structured and visually appealing manner.
+						In HTML, <em>paragraph</em> tags, represented as <strong>&lt;p&gt;</strong>, are used to define and structure text content within a web page. <span class="fs-5">They create a <em>block-level</em> element, automatically adding spacing before and after the enclosed text, making it suitable for organizing and presenting textual information in a structured and visually appealing manner.</span>
 					</p>
 				</div>
 			</div>
 
-			<p>
-				Next, I am going to multiply the following two numbers and
-				display the result, all with JavaScript
-			</p>
-			<p></p>
-			<p>First number:<span id="firstNum">100</span> <br /></p>
-			<p>Second number: <span id="secondNum">50595950</span></p>
-			<p>
-				Therefore, the product of the two of those numbers is:
-				<span id="prodResult">(placeholder for the answer)</span>
-			</p>
-			<input
-				type="button"
-				id="multiplyButton"
-				value="Click to multiply!"
-			/>
-
-			<p>
-				Therefore, the difference of the two of those numbers is:
-				<span id="diffResult">(placeholder for the answer)</span>
-			</p>
-			<input type="button" id="subButton" value="Click to subract!" />
-		</div>
+			<!-- Calculator -->
+			<div class="container d-flex justify-content-center">
+				<div id="calc-container" class="head container rounded w-auto p-2">
+					<!--display -->
+					<div class="row d-flex justify-content-center ">
+						<div id="display" class="col-10 row mb-2 rounded d-flex justify-content-center">
+							<!-- text --> 
+							<div id="display-text" class="border-bottom border-2 border-dark my-2 text-end"></div>
+						</div>
+					</div>
+					<!-- numbers -->
+					<div class="container">
+						<div class="row mb-2">
+							<div class="col-3"><button class="btn border text-center">(</button></div>
+							<div class="col-3"><button class="btn border text-center">)</button></div>
+							<div class="col-3"><button class="btn border text-center">AC</button></div>
+							<div class="col-3"><button class="btn border text-center"><i class="bi bi-backspace"></i></button></div>
+						</div>
+						<div class="row mb-2">
+							<div class="col-3"><button class="btn border text-center">7</button></div>
+							<div class="col-3"><button class="btn border text-center">8</button></div>
+							<div class="col-3"><button class="btn border text-center">9</button></div>
+							<div class="col-3"><button class="btn border text-center">/</i></button></div>
+						</div>
+						<div class="row mb-2">
+							<div class="col-3"><button class="btn border text-center">7</button></div>
+							<div class="col-3"><button class="btn border text-center">8</button></div>
+							<div class="col-3"><button class="btn border text-center">9</button></div>
+							<div class="col-3"><button class="btn border text-center">/</i></button></div>
+						</div>
+						<div class="row">
+							<div class="col-3"><button class="btn border text-center">4</button></div>
+							<div class="col-3"><button class="btn border text-center">5</button></div>
+							<div class="col-3"><button class="btn border text-center">6</button></div>
+							<div class="col-3"><button class="btn border text-center">x<button></div>
+							</div>
+						</div>
+				</div>
+			</div>
+			
 
 		<!-- scripts -->
 		<!-- bootstrap -->

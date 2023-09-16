@@ -62,3 +62,21 @@ body {
 #par-showcase{
 	background: #445069;
 }
+
+
+/* Calculator */
+#calc-container{
+	/* width: 500px; */
+}
+
+#display{
+	height: 50px;
+	background: #dbdbdb;
+	color: #524f4f;
+}
+
+.btn{
+	color: #adadad;
+	width: 40px;
+	height: 40px;
+}
